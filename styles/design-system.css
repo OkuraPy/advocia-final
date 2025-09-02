@@ -1,0 +1,153 @@
+/* Design System - Elegância Jurídica Moderna */
+
+:root {
+  /* Cores Principais - Paleta Profissional */
+  --primary: #1e293b;        /* Slate profundo */
+  --primary-dark: #0f172a;   /* Slate escuro */
+  --primary-light: #334155;  /* Slate claro */
+  
+  --accent: #d4af37;         /* Dourado elegante */
+  --accent-subtle: #fef3c7;  /* Dourado suave */
+  --accent-hover: #b8941f;   /* Dourado hover */
+  
+  --secondary: #1e3a8a;      /* Azul profissional */
+  --secondary-light: #3b82f6; /* Azul claro */
+  
+  --success: #059669;        /* Verde esmeralda */
+  --warning: #d97706;        /* Âmbar */
+  --danger: #dc2626;         /* Vermelho sóbrio */
+  
+  /* Backgrounds */
+  --bg-primary: #ffffff;     /* Fundo principal */
+  --bg-secondary: #f8fafc;   /* Fundo secundário */
+  --bg-tertiary: #f1f5f9;    /* Fundo terciário */
+  --bg-overlay: rgba(15, 23, 42, 0.5);
+  
+  /* Textos */
+  --text-primary: #0f172a;   /* Texto principal */
+  --text-secondary: #475569; /* Texto secundário */
+  --text-tertiary: #94a3b8;  /* Texto terciário */
+  --text-inverse: #ffffff;   /* Texto invertido */
+  
+  /* Bordas */
+  --border-light: #e2e8f0;
+  --border-medium: #cbd5e1;
+  --border-dark: #94a3b8;
+  
+  /* Sombras Elegantes */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-elegant: 0 4px 20px rgba(0, 0, 0, 0.08);
+  
+  /* Tipografia */
+  --font-serif: 'Crimson Text', 'Georgia', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Espaçamentos */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  /* Bordas Arredondadas */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+  
+  /* Transições */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+  
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --primary: #f8fafc;
+  --primary-dark: #ffffff;
+  --primary-light: #e2e8f0;
+  
+  --accent: #d4af37;
+  --accent-subtle: #422c05;
+  --accent-hover: #f5d875;
+  
+  --secondary: #60a5fa;
+  --secondary-light: #93c5fd;
+  
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-tertiary: #94a3b8;
+  --text-inverse: #0f172a;
+  
+  --border-light: #334155;
+  --border-medium: #475569;
+  --border-dark: #64748b;
+  
+  --shadow-elegant: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Animações Elegantes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+/* Classes Utilitárias */
+.elegant-gradient {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.gold-accent {
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-hover) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.elegant-shadow {
+  box-shadow: var(--shadow-elegant);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
